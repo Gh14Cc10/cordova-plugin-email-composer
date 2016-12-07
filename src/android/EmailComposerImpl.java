@@ -517,8 +517,6 @@ public class EmailComposerImpl {
             for (Account account : am.getAccounts()) {
                 if (account.type.endsWith("mail")) {
                     return true;
-                }else{
-                    return true;
                 }
             }
         } catch (Exception e) {
@@ -526,7 +524,7 @@ public class EmailComposerImpl {
             return true;
         }
 
-        return false;
+        return true;
     }
 
     /**
